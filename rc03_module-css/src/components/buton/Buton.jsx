@@ -1,5 +1,10 @@
 // import "./Buton.css";
-import ButonStyle from "./buton.module.css";
+
+import "./Buton.css";
+
+const Buton = () => {
+  return <div>Buton</div>;
+};
 
 //* Eğer CSS'deki class adi kebap-case seklinde yazilmis ise
 //* module ile bu class'a erismek icin ornekte goruldugu gibi
@@ -7,14 +12,5 @@ import ButonStyle from "./buton.module.css";
 //* en garanti yontemdir.
 
 //* ORN:moduleName["class-adi"]
-
-const Buton = ({ btn }) => {
-  console.log(btn);
-  return (
-    <div className={ButonStyle.title}>
-      <button className={ButonStyle["btn-blue"]}>{btn}</button>
-    </div>
-  );
-};
 
 export default Buton;
