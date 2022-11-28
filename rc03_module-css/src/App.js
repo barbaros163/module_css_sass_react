@@ -1,16 +1,18 @@
 import Card from "./components/card/Card";
+import data from "./util/data";
 
 function App() {
   // JS
 
   return (
+    //JSX
     <>
-      <h1>languages</h1>
-      <Card />
+      {data.map((item) => {
+        const { id, language, img, btnName } = item;
+        return <Card />;
+      })}
     </>
   );
-
-  //JSX
 }
 
 export default App;
