@@ -1,7 +1,7 @@
 import Buton from "../buton/Buton";
 import "./Card.css";
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div>
       Card

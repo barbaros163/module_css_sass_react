@@ -8,8 +8,8 @@ function App() {
     //JSX
     <>
       {data.map((item) => {
-        const { id, language, img, btnName } = item;
-        return <Card />;
+        const { id, language, img, btnName } = item; //! destr.
+        return <Card language={language} img={img} btn={btnName} />;
       })}
     </>
   );
