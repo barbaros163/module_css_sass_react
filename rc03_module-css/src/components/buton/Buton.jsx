@@ -2,8 +2,12 @@
 
 import "./Buton.css";
 
-const Buton = () => {
-  return <div>Buton</div>;
+const Buton = ({ btn }) => {
+  return (
+    <div>
+      <button> {btn} </button>
+    </div>
+  );
 };
 
 //* Eğer CSS'deki class adi kebap-case seklinde yazilmis ise
